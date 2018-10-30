@@ -2,10 +2,13 @@ package at.aau.itec.esop18.lesson05;
 
 public class CheckForPrimesWithFunctions {
     public static void main(String[] args) {
-        for (int i = 3; i <= 10000; i = i + 2) {
-            if (isPrime(i))
-                System.out.println("prime number " + i);
+        long ms = System.currentTimeMillis();
+        for (int i = 3; i <= 100000; i = i + 2) {
+            //if (isPrime(i))
+            //    System.out.println("prime number " + i);
+            isPrime(i);
         }
+        System.out.println(System.currentTimeMillis()-ms);
     }
 
     /**
